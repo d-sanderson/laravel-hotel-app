@@ -7,15 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class ReadOnlyBase
 {
     //
-	protected $titles_array = [];
-	public function getAllTitles()
-	{
-		return $this->titles_array;
+    protected $titles_array = [];
 
-	}
+    public function all()
+    {
+        return $this->titles_array;
+    }
 
-	public function getTitleByTitleId($id)
-	{
-		return $this -> titles_array[$id];
-	}
+    public function get( $id )
+    {
+        return $this->titles_array[$id];
+    }
 }
