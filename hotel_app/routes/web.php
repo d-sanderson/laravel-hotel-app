@@ -36,3 +36,10 @@ Route::get('/home', function () {
 
 });
 
+
+Route::get('/di', 'ClientController@di');
+
+
+
+
+
