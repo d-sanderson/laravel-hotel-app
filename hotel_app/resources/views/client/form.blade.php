@@ -15,37 +15,37 @@
                 </div>
                 <div class="medium-4  columns">
                     <label>Name</label>
-                    <input name="name" type="text">
+                    <input name="name" value="{{ old('name') }}" type="text">
                     <small class="error">{{$errors->first('name')}}</small>
                 </div>
                 <div class="medium-4  columns">
                     <label>Last Name</label>
-                    <input name="last_name" type="text">
+                    <input name="last_name" value="{{ old('last_name') }}" type="text">
                     <small class="error">{{$errors->first('last_name')}}</small>
                 </div>
                 <div class="medium-8  columns">
                     <label>Address</label>
-                    <input name="address" type="text">
+                    <input name="address" value="{{ old('address') }}" type="text">
                     <small class="error">{{$errors->first('address')}}</small>
                 </div>
                 <div class="medium-4  columns">
                     <label>Zip Code</label>
-                    <input name="zip_code" type="text">
+                    <input name="zip_code" value="{{ old('zip_code') }}" type="text">
                     <small class="error">{{$errors->first('zip_code')}}</small>
                 </div>
                 <div class="medium-4  columns">
                     <label>City</label>
-                    <input name="city" type="text">
+                    <input name="city" type="text" value="{{ old('city') }}">
                     <small class="error">{{$errors->first('city')}}</small>
                 </div>
                 <div class="medium-4  columns">
                     <label>State</label>
-                    <input name="state" type="text">
+                    <input name="state" value="{{ old('state') }}" type="text">
                     <small class="error">{{$errors->first('state')}}</small>
                 </div>
                 <div class="medium-12  columns">
                     <label>Email</label>
-                    <input name="email" type="text">
+                    <input name="email"  value="{{ old('email') }}" type="text">
                     <small class="error">{{$errors->first('email')}}</small>
                 </div>
                 <div class="medium-12  columns">
